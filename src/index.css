@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    /* Define CSS variables for better reusability */
+    --font-primary: 'Inter', 'Avenir', 'Helvetica', 'Arial', sans-serif;
+    --font-size: 16px;
+    --line-height: 24px;
+    --font-weight: 400;
+    --background-gradient: radial-gradient(ellipse at top left, #7f50e4, #4c05d0);
+  }
+  
+  body {
+    min-height: 100vh;
+    font-family: var(--font-primary);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-weight: var(--font-weight);
+    background-image: var(--background-gradient);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    box-sizing: border-box; /* Ensure consistent box-sizing */
+  }
+  
