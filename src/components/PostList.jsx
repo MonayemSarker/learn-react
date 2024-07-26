@@ -2,6 +2,7 @@ import NewPost from "./NewPost";
 import Post from "./Post";
 import classes from "./Post.module.css";
 import { useState } from "react";
+import Modal from "./Modal";
 
 function PostList() {
   const [enterdDetails, setEnteredDetails] = useState("");
@@ -17,10 +18,12 @@ function PostList() {
 
   return (
     <>
-      <NewPost
-        onTextChange={detailsChangeHandler}
-        onHeadlineChange={headLineChangeHandler}
-      />
+      <Modal>
+        <NewPost
+          onTextChange={detailsChangeHandler}
+          onHeadlineChange={headLineChangeHandler}
+        />
+      </Modal>
       <ul className={classes.posts}>
         <Post headline="React" details="React is a JS library" />
         <Post headline={enterdHeadLine} details={enterdDetails} />
